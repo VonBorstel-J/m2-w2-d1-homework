@@ -1,8 +1,8 @@
 header {
     background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
-    background-size: 1500px;
-    /*background-position: 0 -200px;*/
-    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 400px; /* give header some height to display the background image */
     padding-top: 100px;
     padding-left: 100px;
@@ -38,6 +38,23 @@ header {
   main {
     margin: 50px;
   }
+
+  .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding: auto;
+  }
+  
+  @media (min-width: 600px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
+
+
   main h1 {
     color:rgb(129, 141, 179);
     font-family: arial;
